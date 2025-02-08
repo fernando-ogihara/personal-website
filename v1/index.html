@@ -1,0 +1,20 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernando Ogihara - Software Developer</title>
+    <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+    <script>
+        document.addEventListener('mousemove', (e) => {
+            const mouseX = e.clientX;
+            const mouseY = e.clientY;
+
+            // Atualiza as variáveis CSS para a posição do mouse
+            document.body.style.setProperty('--mouse-x', `${mouseX - 75}px`);
+            document.body.style.setProperty('--mouse-y', `${mouseY - 75}px`);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+  
+body {
+height: 100vh;
+background-color: rgba(17, 32, 68, 1);
+overflow: hidden;
+position: relative;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #fff 0%, rgba(17, 32, 68, 0.6) 80%);
+    pointer-events: none;
+    opacity: 0.5;
+    z-index: -1;
+    transform: translate(var(--mouse-x), var(--mouse-y));
+    transition: transform 0.1s ease-out;
+}
